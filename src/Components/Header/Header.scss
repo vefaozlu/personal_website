@@ -1,0 +1,133 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15vh;
+    width: 50%;
+    height: 80vh;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 60%;
+
+        .welcome {
+            margin-bottom: 5vh;
+            padding: 0;
+            color: #fff;
+
+            .title {
+                font-size: 3rem;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            .abstract {
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin: 24px 0;
+            }
+
+            .content {
+                font-size: 1rem;
+                font-weight: 400;
+                margin: 24px 0;
+            }
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            text-decoration: none;
+            cursor: pointer;
+
+            .nlink {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .nav-indicator {
+                    background-color: darkgrey;
+                    height: 1px;
+                    width: 40px;
+                    transition: 200ms;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    margin: 0.5rem;
+                    color: darkgrey;
+                }
+            }
+
+            .nlink:hover {
+                .nav-indicator {
+                    background-color: #fff;
+                    height: 1.5px;
+                    width: 80px;
+                    transition: 300ms;
+                }
+
+                p {
+                    color: #fff;
+                }
+            }
+
+            .active {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .nav-indicator {
+                    background-color: #fff;
+                    height: 1.5px;
+                    width: 80px;
+                    transition: 300ms;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    margin: 0.5rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 60%;
+
+        ul {
+            padding: 0;
+            display: inline-flex;
+            list-style-type: none;
+
+            li {
+                padding: 0 10px;
+
+                a {
+                    color: silver;
+                    transition: 100ms;
+                }
+
+                a:hover {
+                    color: #fff;
+                    transition: 200ms;
+                }
+            }
+        }
+    }
+}

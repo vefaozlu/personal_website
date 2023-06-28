@@ -1,0 +1,33 @@
+.main {
+    width: 50%;
+    color: #fff;
+    padding-bottom: 10vh;
+
+    .about {
+        padding-top: 15vh;
+        p {
+            width: 80%;
+            margin: 0;
+            margin-bottom: 10px;
+            color: silver;
+            
+        }
+    }
+
+    .projects {
+        padding: 10vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .certificates {
+        padding-top: 10vh;
+        padding-bottom: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}

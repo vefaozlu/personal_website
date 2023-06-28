@@ -1,0 +1,96 @@
+.card {
+    width: 80%;
+    margin: 1rem 0;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.card-content {
+    display: flex;
+    color: #fff;
+    border-radius: 5px;
+    transition: 100ms;
+    padding: 1rem;
+    border-top: 1px solid transparent;
+
+    .img-container {
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        margin-right: 1rem;
+
+        img {
+            width: 16vh;
+            border-radius: 3px;
+            border: 1px solid transparent;
+            transition: 100ms;
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: silver;
+            margin: 0;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: white;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+
+        .information {
+            font-size: 0.9rem;
+            color: silver;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0;
+            margin: 1rem 0;
+
+            .technology {
+                border-radius: 15px;
+                font-size: 0.8rem;
+                background-color:rgba(0, 128, 128, 0.299);
+                color: aquamarine;
+                margin: 7px;
+                padding: 0.3rem 1rem;
+
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.card-content:hover {
+    background-color: #ffffff14;
+    transition: 100ms;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border-top: 1px solid #ffffff3d;
+
+    img {
+        border: 1px solid #ffffff60;
+        transition: 100ms;
+    }
+}
