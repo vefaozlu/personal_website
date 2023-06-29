@@ -14,8 +14,7 @@ function Header() {
           <p className="title">Kadir Vefa Ozlu</p>
           <p className="abstract">Computer Engineering Student</p>
           <p className="content">
-            Incididunt commodo voluptate quis duis anim aute magna deserunt quis
-            eiusmod.
+            I build full-stack applications with NodeJS, ReactJS, Flutter and Swift.
           </p>
         </div>
 

@@ -1,6 +1,10 @@
 import { Element } from "react-scroll";
 import Card, { Technology } from "../Card/Card";
 import "./Main.scss";
+import preview_1 from "../../Assets/rent_app_preview.png";
+import preview_2 from "../../Assets/pomodoro_preview.png";
+import preview_3 from "../../Assets/adis_preview.png";
+import preview_4 from "../../Assets/rick_and_morty_preview.png";
 
 function Main() {
   return (
@@ -21,24 +25,22 @@ function Main() {
 function About() {
   return (
     <div className="about">
+      <p></p>
       <p>
-        Qui ullamco qui do dolor eiusmod proident exercitation sint consectetur
-      cillum. Aliquip sint aliquip sit mollit cupidatat incididunt tempor
-      laboris adipisicing ipsum dolore esse anim. Amet officia sunt duis nulla
-      et do do excepteur culpa esse eiusmod. Id anim id esse laborum non aliqua
-      veniam.
+        Hello, I'm K. Vefa Özlü! I am a senior student studying Computer
+        Engineering, and I have had a great interest in developing projects
+        throughout my university life. I have undertaken numerous projects both
+        with the support of my friends and individually. These projects have
+        played a significant role in expanding my knowledge in addition to my
+        coursework.
       </p>
       <p>
-        Qui ullamco qui do dolor eiusmod proident exercitation sint consectetur
-      cillum. Aliquip sint aliquip sit mollit cupidatat incididunt tempor
-      laboris adipisicing ipsum dolore esse anim.
-      </p>
-      <p>
-        Qui ullamco qui do dolor eiusmod proident exercitation sint consectetur
-      cillum. Aliquip sint aliquip sit mollit cupidatat incididunt tempor
-      laboris adipisicing ipsum dolore esse anim. Amet officia sunt duis nulla
-      et do do excepteur culpa esse eiusmod. Id anim id esse laborum non aliqua
-      veniam.
+        My goal is to continuously improve myself in the field of full-stack
+        mobile application development and become a sought-after engineer in
+        this domain. Alongside my experience in mobile programming, I have
+        developed a keen interest in artificial intelligence. While working in
+        my field, I also take courses on deep learning algorithms through
+        Coursera.
       </p>
     </div>
   );
@@ -48,59 +50,47 @@ function Projects() {
   return (
     <div className="projects">
       <Card
-        link={"https://google.com"}
-        imgLink={
-          "https://images.pexels.com/photos/242492/pexels-photo-242492.jpeg?auto=compress&cs=tinysrgb&w=1200"
-        }
+        link={"https://github.com/vefaozlu/rentapp_api.git"}
+        imgLink={preview_1}
         title={"Rent App"}
         content={
-          "Minim minim amet Lorem sint sunt aliquip aute in irure tempor enim fugiat."
+          "This app is for landlords to manage their properties and tenants. I am still developing this app."
         }
-        items={technologies}
+        items={[
+          <Technology text="NodeJS" />,
+          <Technology text="GraphQL" />,
+          <Technology text="Postgres" />,
+          <Technology text="Prisma ORM" />,
+          <Technology text="Firebase" />,
+          <Technology text="Flutter" />,
+        ]}
       />
       <Card
-        link={"https://google.com"}
-        imgLink={
-          "https://images.pexels.com/photos/242492/pexels-photo-242492.jpeg?auto=compress&cs=tinysrgb&w=1200"
-        }
-        title={"Rent App"}
-        content={
-          "Minim minim amet Lorem sint sunt aliquip aute in irure tempor enim fugiat."
-        }
-        items={technologies}
+        link={"https://github.com/vefaozlu/pomodoro.git"}
+        imgLink={preview_2}
+        title={"Pomodoro App"}
+        content={"This app is for students to control their study periods."}
+        items={[
+          <Technology text="Flutter" />,
+          <Technology text="BLoC" />,
+          <Technology text="Hive" />,
+        ]}
       />
       <Card
-        link={"https://google.com"}
-        imgLink={
-          "https://images.pexels.com/photos/242492/pexels-photo-242492.jpeg?auto=compress&cs=tinysrgb&w=1200"
-        }
-        title={"Rent App"}
-        content={
-          "Minim minim amet Lorem sint sunt aliquip aute in irure tempor enim fugiat."
-        }
-        items={technologies}
+        link={"https://github.com/vefaozlu/rick_and_morty.git"}
+        imgLink={preview_4}
+        title={"Rick and Morty Characters"}
+        content={`This app lists characters of cartoon series Rick and Morty fetching data from rickandmotyapi`}
+        items={[<Technology text="Swift" />]}
       />
       <Card
-        link={"https://google.com"}
-        imgLink={
-          "https://images.pexels.com/photos/242492/pexels-photo-242492.jpeg?auto=compress&cs=tinysrgb&w=1200"
-        }
-        title={"Rent App"}
+        link={"https://github.com/vefaozlu/adis.git"}
+        imgLink={preview_3}
+        title={"ADIS"}
         content={
-          "Minim minim amet Lorem sint sunt aliquip aute in irure tempor enim fugiat."
+          "Simple app made for a friend who studies Speech and Language Therapy using flutter and audioplayers package."
         }
-        items={technologies}
-      />
-      <Card
-        link={"https://google.com"}
-        imgLink={
-          "https://images.pexels.com/photos/242492/pexels-photo-242492.jpeg?auto=compress&cs=tinysrgb&w=1200"
-        }
-        title={"Rent App"}
-        content={
-          "Minim minim amet Lorem sint sunt aliquip aute in irure tempor enim fugiat."
-        }
-        items={technologies}
+        items={[<Technology text="Flutter" />, <Technology text="BLoC" />]}
       />
     </div>
   );
@@ -110,9 +100,8 @@ function Certificates() {
   return (
     <div className="certificates">
       <Card
-        link={
-          "https://google.https://coursera.org/share/c90ec31f3ea3e9d4c5046fc84337e515"
-        }
+        link={"https://coursera.org/share/c90ec31f3ea3e9d4c5046fc84337e515"}
+        alt="3/3/2023"
         title={"Neural Networks and Deep Learning"}
         content={
           "Introductive course to Neural Networks and Deep Learning instructed by Andarw Ng."
@@ -120,23 +109,18 @@ function Certificates() {
         items={[]}
       />
       <Card
-        link={"https://google.com"}
-        title={"Neural Networks and Deep Learning"}
+        link={"https://coursera.org/share/04f2bcee6d110f88074af4fd1b7dba9e"}
+        alt="23/4/2023"
+        title={
+          "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization"
+        }
         content={
-          "Introductive course to Neural Networks and Deep Learning instructed by Andarw Ng."
+          "Introductive course about Tuning, Regularization and optimization algotirhms instructed by Andarw Ng."
         }
         items={[]}
       />
     </div>
   );
 }
-
-const technologies = [
-  <Technology text="React" />,
-  <Technology text="React" />,
-  <Technology text="React" />,
-  <Technology text="React" />,
-  <Technology text="React" />,
-];
 
 export default Main;

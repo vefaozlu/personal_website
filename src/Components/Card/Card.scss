@@ -40,7 +40,7 @@
         flex-direction: column;
 
         .title {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 600;
             color: white;
             padding: 0;
@@ -71,7 +71,7 @@
                 font-size: 0.8rem;
                 background-color:rgba(0, 128, 128, 0.299);
                 color: aquamarine;
-                margin: 7px;
+                margin: 3px;
                 padding: 0.3rem 1rem;
 
                 p {
@@ -92,5 +92,9 @@
     img {
         border: 1px solid #ffffff60;
         transition: 100ms;
+    }
+
+    .title {
+        color: aquamarine;
     }
 }

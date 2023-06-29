@@ -1,19 +1,15 @@
 import "./Card.scss";
 
-function Card({ link, title, content, imgLink, items }) {
+function Card({ link, title, content, imgLink, alt, items }) {
   return (
     <div className="card">
       <a href={link} target="_blank">
         <div className="card-content">
           <div className="img-container">
             {imgLink != null ? (
-              <img
-                src={imgLink}
-                alt="project-image"
-                style={{ aspectRatio: 3 / 2 }}
-              />
+              <img src={imgLink} alt="preview" style={{ aspectRatio: 16 / 9 }} />
             ) : (
-              <p>01/01/2001</p>
+              <p>{alt}</p>
             )}
           </div>
           <div className="content">
