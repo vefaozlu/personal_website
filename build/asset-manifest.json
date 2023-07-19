@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.784972cd.css",
-    "main.js": "/static/js/main.e749f5d9.js",
+    "main.css": "/static/css/main.0a70a291.css",
+    "main.js": "/static/js/main.7e51cb47.js",
     "static/media/rick_and_morty_preview.png": "/static/media/rick_and_morty_preview.3cfc224a4c425b5e7271.png",
     "static/media/rent_app_preview.png": "/static/media/rent_app_preview.36dc131b679c4b15ca86.png",
     "static/media/adis_preview.png": "/static/media/adis_preview.cfbec9446ab16c3c7983.png",
     "static/media/pomodoro_preview.png": "/static/media/pomodoro_preview.c4eb23c91bc98d83f380.png",
     "index.html": "/index.html",
-    "main.784972cd.css.map": "/static/css/main.784972cd.css.map",
-    "main.e749f5d9.js.map": "/static/js/main.e749f5d9.js.map"
+    "main.0a70a291.css.map": "/static/css/main.0a70a291.css.map",
+    "main.7e51cb47.js.map": "/static/js/main.7e51cb47.js.map"
   },
   "entrypoints": [
-    "static/css/main.784972cd.css",
-    "static/js/main.e749f5d9.js"
+    "static/css/main.0a70a291.css",
+    "static/js/main.7e51cb47.js"
   ]
 }
