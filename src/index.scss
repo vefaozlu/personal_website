@@ -1,5 +1,14 @@
+:root {
+    --white: #fff;
+    --white87: #ffffffdd;
+    --white73: #ffffffbb;
+    --aquamarine: #7fffd4;
+    --teal65: #00808041;
+}
+
 body {
-    background-color: rgb(15 23 42);
+    background-color: #090979;
+    background-image: linear-gradient(to left, #020024, #090979, #00d4ff);
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;

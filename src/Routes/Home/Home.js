@@ -1,12 +1,16 @@
 import Header from "../../Components/Header/Header";
-import Main from "../../Components/Main/Main";
+import Main, {
+  About,
+  Projects,
+  Certificates,
+} from "../../Components/Main/Main";
 import "./Home.scss";
 
 function Home() {
   return (
     <div className="home">
       <Header />
-      <Main />
+      <Main items={[<About />, <Projects />, <Certificates />]} />
     </div>
   );
 }
