@@ -79,16 +79,14 @@ export function Projects() {
         link={"https://github.com/vefaozlu/rick_and_morty.git"}
         imgLink={preview_4}
         title={"Rick and Morty Characters"}
-        content={`This app lists characters of cartoon series Rick and Morty fetching data from rickandmotyapi`}
+        content={`This app lists characters of cartoon series Rick and Morty fetching data from The Rick and Morty API.`}
         items={[<Technology text="Swift" />]}
       />
       <Card
         link={"https://github.com/vefaozlu/adis.git"}
         imgLink={preview_3}
         title={"ADIS"}
-        content={
-          "Simple app made for a friend who studies Speech and Language Therapy using flutter and audioplayers package."
-        }
+        content={`This app made for Speech and Language Therapy using flutter and audioplayers package.`}
         items={[<Technology text="Flutter" />, <Technology text="BLoC" />]}
       />
     </div>
@@ -112,7 +110,6 @@ export function Certificates() {
       />
       <Card
         link={"https://coursera.org/share/04f2bcee6d110f88074af4fd1b7dba9e"}
-        /* alt="23/4/2023" */
         imgLink={
           "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/de1a6556fbe605411e8c1c2ca4ba45f1.png?auto=format%2Ccompress&dpr=1&w=333&h=215&q=40https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/de1a6556fbe605411e8c1c2ca4ba45f1.png?auto=format%2Ccompress&dpr=1&w=333&h=215&q=40"
         }

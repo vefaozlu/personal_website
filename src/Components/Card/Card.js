@@ -14,7 +14,7 @@ function Card({ link, title, content, imgLink, alt, items }) {
           </div>
           <div className="content">
             <p className="title">{title}</p>
-            <p className="information">{content}</p>
+            <div className="information">{content}</div>
             <div className="tecknologies-container">
               <ul>
                 {items.map((technology, index) => (
